@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="btssio.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="backgroundpage.css">
     <title>BTS SIO</title>
 </head>
 <body>
+
+    <!-- POUR LA NAVIGATION DE LA PAGE -->
     <header>
         <nav class="nav">
+            <a href="apropos.html" class="nav-item">A PROPOS</a>
             <a href="btssio.html" class="nav-item active">BTS SIO</a>
             <a href="ecole&entreprise.html" class="nav-item">ECOLE & ENTREPRISE</a>
             <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
@@ -18,20 +23,32 @@
             <a href="contact.html" class="nav-item">CONTACT</a>
         </nav>
     </header>
-    <script src="nav.js"></script>
-    <main>
-        <div class="div-header"></div>
-        <h1><strong>Bienvenue</strong></h1>
-        <div>
-            <div class="box-cv">
-                <a href="#"> <img class="img-cv" src="photo.png" alt="photo de profil"> Télécharger mon cv <br> Nathan AUDET</a>
+
+    <!-- POUR LE BACKGROUND DE LA PAGE -->
+    <section class="section-backgroundpage">
+        <div class="gradient-bg">
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive"></div>
             </div>
         </div>
+    </section>
+
+    <main>
+        <!-- MARGIN TOP DU DEBUT -->
+        <div id="containvide"></div>
+
+        <div class="premiercontent-apropos"></div>
     </main>
+
     <footer>
         <nav>
-
         </nav>
     </footer>
+
 </body>
 </html> 

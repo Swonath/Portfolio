@@ -1,0 +1,55 @@
+#containvide{
+    height: 100px;
+}
+
+.premiercontent-apropos{
+    width: 90%;
+    margin: 0 5%;
+    height: 1000px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 0 10px 40px #94b0ff;
+}
+
+.photoprofil{
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.ligne-apres-photo {
+    border: none;
+    border-top: 2px solid #6c6c6c; /* Couleur de la ligne */
+    width: 20%; /* Ajuste la largeur de la ligne */
+    margin: 20px auto 100px; /* Centrage de la ligne avec une marge */
+    position: relative;
+}
+
+.presentation{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: #303030;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-presentation{
+    color: gray;
+    font-size: medium;
+}
