@@ -59,6 +59,8 @@
     }
 }
 
+
+
 .g1 {
     position: absolute;
     background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;

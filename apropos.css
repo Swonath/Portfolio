@@ -2,10 +2,10 @@
     height: 100px;
 }
 
-.premiercontent-apropos{
-    width: 90%;
-    margin: 0 5%;
-    height: 1000px;
+.premier-content-apropos{
+    width: 80%;
+    margin: 0 10%;
+    height: 500px;
     background-color: #ffffff;
     display: flex;
     justify-content:center;
@@ -13,17 +13,13 @@
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
-    z-index: ;
 }
 
 .photoprofil{
     height: 200px;
     width: 200px;
-    margin: 40px auto;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    position:relative;
+    margin-top: 40px;
 }
 
 .ligne-apres-photo {
@@ -34,38 +30,71 @@
     position: relative;
 }
 
-.presentation{
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    box-sizing: 50%;
-}
-
 h1{
     color: #303030;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .p-presentation{
     color: gray;
     font-size: medium;
-    margin: 10px auto;
 }
 
-.telecharger-mo-cv{
-    width: 90%;
-    margin: 0 5%;
-    height: 10px;
-    background-color: #fc0000;
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 0 10%;
+    font-family: "Roboto", sans-serif;
+}
+
+.presentation-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.telecharger-mon-cv {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: -80px;
+    margin-right: 18%; /* Ajuste cette valeur pour placer au centre verticalement */
+    cursor: pointer;
+    font-size: x-large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    box-shadow: #94b0ff;
+    padding: 15px;
+    background-color: #94b0ff17;
+    gap: 8px;
+}
+
+.telecharger-mon-cv:hover{
+    background-color: #94b0ff62;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+.deuxieme-content-apropos{
+    width: 80%;
+    margin: 100px 10%;
+    height: 500px;
+    background-color: #ffffff;
     display: flex;
     justify-content:center;
     align-items: center;
     border-radius: 8px;
-    position: relative;
+    position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
 }
