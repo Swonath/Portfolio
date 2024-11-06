@@ -19,14 +19,14 @@
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .ligne-apres-photo {
     border: none;
     border-top: 2px solid #6c6c6c; /* Couleur de la ligne */
     width: 20%; /* Ajuste la largeur de la ligne */
-    margin: 40px auto 40px; /* Centrage de la ligne avec une marge */
+    margin: 0 auto 40px; /* Centrage de la ligne avec une marge */
     position: relative;
 }
 
@@ -51,7 +51,7 @@ h1{
     position: relative;
     width: 85%;
     height: auto;
-    margin: 0 10%;
+    margin: 0 auto 0;
     font-family: "Roboto", sans-serif;
 }
 
@@ -66,8 +66,8 @@ h1{
 
 .telecharger-mon-cv {
     align-self: flex-end; /* Aligne à droite */
-    margin-top: -80px;
-    margin-right: 18%; /* Ajuste cette valeur pour placer au centre verticalement */
+    margin-top: -105px;
+    margin-right: 13%; /* Ajuste cette valeur pour placer au centre verticalement */
     cursor: pointer;
     font-size: x-large;
     border: 1px solid #94b0ff;
@@ -97,4 +97,10 @@ h1{
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    min-height: 200vh; /* ou ajuste cette valeur pour la rendre défilable */
 }

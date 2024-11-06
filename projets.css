@@ -2,10 +2,10 @@
     height: 100px;
 }
 
-.premiercontent-apropos{
-    width: 90%;
-    margin: 0 5%;
-    height: 800px;
+.premier-content-apropos{
+    width: 80%;
+    margin: 0 10%;
+    height: 500px;
     background-color: #ffffff;
     display: flex;
     justify-content:center;
@@ -13,4 +13,10 @@
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    min-height: 200vh; /* ou ajuste cette valeur pour la rendre défilable */
 }
