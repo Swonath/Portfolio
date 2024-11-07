@@ -11,7 +11,7 @@
 .premier-content-apropos{/* premier rectangle blanc */
     width: 80%;
     margin: 0 10%;
-    height: 800px; /* réglage hauteur */
+    height: 730px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
     justify-content:center;
@@ -135,7 +135,7 @@ h1{
 .logos {
     display: flex; /* Les images seront affichées en ligne */
     gap: 100px; /* Espace entre les logos */
-    animation: defilement 15s linear infinite;  /* Animation pour défiler */
+    animation: defilement 20s linear infinite;  /* Animation pour défiler */
 
 }
 
@@ -157,7 +157,7 @@ h1{
 
 .deuxieme-content-apropos{
     width: 80%;
-    margin: 250px 10%;
+    margin: 100px 10%;
     height: 800px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
@@ -166,4 +166,23 @@ h1{
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    margin: 950px 0;
+    height: 200px; /* réglage hauteur */
+    background-color: #94b0ff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 0 10px 40px #94b0ff;
+}
+
+.footer-navigation{
+    
 }
