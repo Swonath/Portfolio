@@ -2,10 +2,16 @@
     height: 100px;
 }
 
-.premier-content-apropos{
+.page-content { /* class qui fixe le fond derrière */
+    position: relative;
+    z-index: 1;
+    min-height: 200vh; /* ou ajuste cette valeur pour la rendre défilable */
+}
+
+.premier-content-apropos{/* premier rectangle blanc */
     width: 80%;
     margin: 0 10%;
-    height: 500px;
+    height: 800px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
     justify-content:center;
@@ -13,6 +19,19 @@
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
+}
+
+/*............................................................*/
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 85%;
+    height: 500px;
+    margin: 0 auto 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .photoprofil{
@@ -30,13 +49,23 @@
     position: relative;
 }
 
+.presentation-contenus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-left: 25%;
+}
+
 h1{
-    color: #303030;
+    color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-bottom: 30px;
     margin-top: 0;
+    font-size: 2rem;
 }
 
 .p-presentation{
@@ -44,7 +73,30 @@ h1{
     font-size: medium;
 }
 
-.presentation {
+.telecharger-mon-cv {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: -100px;
+    margin-right: 25%; /* Ajuste cette valeur pour placer au centre verticalement */
+    cursor: pointer;
+    font-size: x-large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    box-shadow: #94b0ff;
+    padding: 15px;
+    background-color: #94b0ff17;
+    gap: 8px;
+}
+.telecharger-mon-cv:hover{
+    background-color: #94b0ff62;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+/*............................................................*/
+
+.competencesacquises{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +107,7 @@ h1{
     font-family: "Roboto", sans-serif;
 }
 
-.presentation-contenu {
+.competencesacquises-contenus{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,43 +116,54 @@ h1{
     margin-left: 25%;
 }
 
-.telecharger-mon-cv {
-    align-self: flex-end; /* Aligne à droite */
-    margin-top: -105px;
-    margin-right: 13%; /* Ajuste cette valeur pour placer au centre verticalement */
-    cursor: pointer;
-    font-size: x-large;
-    border: 1px solid #94b0ff;
-    border-radius: 10px;
-    box-shadow: #94b0ff;
-    padding: 15px;
-    background-color: #94b0ff17;
-    gap: 8px;
+.h2-competencesacquises{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-size: 1.9rem;
 }
 
-.telecharger-mon-cv:hover{
-    background-color: #94b0ff62;
+.bandeau-logos {
+    width: 75%; /* Largeur de la zone visible */
+    overflow: hidden; /* Cache les images en dehors de la vue */
+    box-sizing: border-box;
+    margin: 0; 
 }
 
-.couleurtelechargermoncv{
-    color: #303030; /* Ajuste selon le style que tu veux */
+.logos {
+    display: flex; /* Les images seront affichées en ligne */
+    gap: 100px; /* Espace entre les logos */
+    animation: defilement 15s linear infinite;  /* Animation pour défiler */
+
 }
+
+.logos img {
+    width: 100px; /* Ajuste la taille de chaque logo */
+    height: auto; /* Garde les proportions */
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0); /* Position de départ */
+    }
+    100% {
+        transform: translateX(-147%); /* Défile jusqu'à la moitié pour donner l'impression de continuité */
+    }
+}
+
+/* --------------------------------------------------------------------------------------- */
 
 .deuxieme-content-apropos{
-    width: 100%;
-    margin: 100px auto;
-    height: 310px;
+    width: 80%;
+    margin: 250px 10%;
+    height: 800px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
     justify-content:center;
     align-items: center;
-    border-radius: 0px;
+    border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
-}
-
-.page-content {
-    position: relative;
-    z-index: 1;
-    min-height: 200vh; /* ou ajuste cette valeur pour la rendre défilable */
 }
