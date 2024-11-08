@@ -211,28 +211,28 @@ footer{
     font-style: normal;
 }
 
-.liste-footer{
+.liste-footer-contact{
     list-style-type: none;
 }
-.liste-footer li {
+.liste-footer-contact li {
     margin-bottom: 0.2rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-left: 1rem;
 }
-.liste-footer a i {
+.liste-footer-contact a i {
     color: #303030;
 }
-.liste-footer a:hover i {
+.liste-footer-contact a:hover i {
     color: #A0C4FF;
 }
-.liste-footer a {
+.liste-footer-contact a {
     color: #303030;
     text-decoration: none;  
     font-size: 1rem;
 }
-.liste-footer a:hover {
+.liste-footer-contact a:hover {
     color: #A0C4FF;
 }
 
