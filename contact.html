@@ -3,48 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="backgroundpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- LIEN POUR LA POLICE ROBOTO -->
     <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script> <!-- LIEN POUR LES ICONES FONT AWESOME -->
+    <link rel="icon" type="image/png" href="image/logosite-512x512.png" sizes="515x512"><!-- LIEN POUR LE LOGO FAVICON -->
 </head>
 <body>
+    <header> <!-- POUR LA NAVIGATION DE LA PAGE  -->
+        <nav class="nav">
+            <a href="index.html"><img class="nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a>
+            <a href="apropos.html" class="nav-item">A PROPOS</a>
+            <a href="btssio.html" class="nav-item">BTS SIO</a>
+            <a href="ecole&entreprise.html" class="nav-item">ECOLE & ENTREPRISE</a>
+            <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
+            <a href="projets.html" class="nav-item">PROJETS</a>
+            <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
+            <a href="contact.html" class="nav-item active">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <h1>Contactez-nous</h1>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
 
-    <section class="section-backgroundpage"> <!-- POUR LE BACKGROUND DE LA PAGE -->
-        <div class="gradient-bg">
-            <div class="gradients-container">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="interactive"></div>
-            </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
-    </section>
+    </main>
 
-    <div class="page-content"> <!-- PERMET LE PROCESSUS DE SCROLLE TOUT EN GARDANT BACKGROUND FIXE -->
-        <header> <!-- POUR LA NAVIGATION DE LA PAGE  -->
-            <nav class="nav">
-                <a href="apropos.html" class="nav-item">A PROPOS</a>
-                <a href="btssio.html" class="nav-item">BTS SIO</a>
-                <a href="ecole&entreprise.html" class="nav-item">ECOLE & ENTREPRISE</a>
-                <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
-                <a href="projets.html" class="nav-item">PROJETS</a>
-                <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
-                <a href="contact.html" class="nav-item active">CONTACT</a>
-            </nav>
-        </header>
+    <footer>
 
-        <main>
-            <div id="containvide"></div> <!-- MARGIN TOP DU DEBUT -->
-            <div class="premier-content-apropos"></div> <!-- FOND BLANC DERRIERE LE CONTENU -->
-        </main>
+        <div class="footer-contenu">
 
-        <footer></footer>
+            <div class="footer-informations">
+                <p ><a href="index.html"><img class="footer-nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a></p>
+                <ul class="liste-footer-logo">
+                    <li> <a href="mentionslégales.html"> Mentions Légales </a> </li>
+                    <li> <a href="conditionsutilisation.html"> Conditions d'utilisation </a> </li>
+                </ul>
+            </div>
 
-    </div>
+            <div class="footer-div">
+                <p class="p-footer">Contact</p>
+                <ul class="liste-footer">
+                    <li> <a href="contact.html"> <i class="fa-solid fa-at" style=" margin-right: 8px;"></i> lanathaud@gmail.com </a> </li>
+                    <li> <a href="https://github.com/Swonath" target="_blank"> <i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub </a> </li>
+                    <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"> <i class="fa-brands fa-linkedin" style=" margin-right: 8px;"></i> Linkedin </a> </li>
+                    <li> <a href="#"> <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24 </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>

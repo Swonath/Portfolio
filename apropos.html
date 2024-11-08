@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="backgroundpage.css">
-    <link rel="stylesheet" href="apropos.css">
-    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- LIEN POUR LA POLICE ROBOTO -->
+    <link rel="stylesheet" href="nav.css"> <!-- LIEN POUR LA NAVIGATION -->
+    <link rel="stylesheet" href="backgroundpage.css"> <!-- LIEN POUR LE BACKGROUND -->
+    <link rel="stylesheet" href="apropos.css"> <!-- LIEN POUR LE CSS DE LA PAGE A PROPOS -->
+    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script> <!-- LIEN POUR LES ICONES FONT AWESOME -->
     <title>A Propos</title>
+    <link rel="icon" type="image/png" href="image/logosite-512x512.png" sizes="515x512"><!-- LIEN POUR LE LOGO FAVICON -->
 </head>
 <body>
 
@@ -29,6 +30,7 @@
 
         <header>
             <nav class="nav"> <!-- POUR LA NAVIGATION DE LA PAGE -->
+                <a href="index.html"><img class="nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a>
                 <a href="apropos.html" class="nav-item active">A PROPOS</a>
                 <a href="btssio.html" class="nav-item">BTS SIO</a>
                 <a href="ecole&entreprise.html" class="nav-item">ECOLE & ENTREPRISE</a>
@@ -53,7 +55,7 @@
                         métiers d’avenir. Comprendre la technologie, c'est anticiper l'évolution de notre société. J’ai découvert cet intérêt <br> 
                         durant mon BTS NDRC, où la digitalisation m'a révélé le potentiel du numérique et du web.
                     </p>
-                    <p class="telecharger-mon-cv"> <a class="couleurtelechargermoncv" href="cvnathan.pdf" target="blank"> Télécharger mon CV <i class="fa-solid fa-download fa-fade" style="color: #303030;"></i></a></p>
+                    <p class="telecharger-mon-cv"> <a class="couleurtelechargermoncv" href="image/cvnathan.pdf" target="blank"> Télécharger mon CV <i class="fa-solid fa-download fa-fade" style="color: #303030;"></i></a></p>
                 </div>
             </div>
             <div class="competencesacquises">
@@ -92,31 +94,29 @@
         </main>
 
         <footer>
-            <div class="dernier-content-apropos"></div>
-            <div class="footer-navigation">
-                <ol class="liste-footer-navigation">
-                    <li> <a href="apropos.html"> A Propos </a> </li>
-                    <li> <a href="btssio.html"> BTS SIO </a> </li>
-                    <li> <a href="ecole&entreprise.html"> Ecole & Entreprise </a> </li>
-                    <li> <a href="réalisations.html"> Réalisations </a> </li>
-                    <li> <a href="projets.html"> Projets </a> </li>
-                    <li> <a href="veilletechnologique.html"> Veille Technologique </a> </li>
-                    <li> <a href="contact.html"> Contact </a> </li>
-                </ol>
+
+            <div class="footer-contenu">
+
+                <div class="footer-informations">
+                    <p ><a href="index.html"><img class="footer-nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a></p>
+                    <ul class="liste-footer-logo">
+                        <li> <a href="mentionslégales.html"> Mentions Légales </a> </li>
+                        <li> <a href="conditionsutilisation.html"> Conditions d'utilisation </a> </li>
+                    </ul>
+                </div>
+
+                <div class="footer-div">
+                    <p class="p-footer">Contact</p>
+                    <ul class="liste-footer">
+                        <li> <a href="contact.html"> <i class="fa-solid fa-at" style=" margin-right: 8px;"></i> lanathaud@gmail.com </a> </li>
+                        <li> <a href="https://github.com/Swonath" target="_blank"> <i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub </a> </li>
+                        <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"> <i class="fa-brands fa-linkedin" style=" margin-right: 8px;"></i> Linkedin </a> </li>
+                        <li> <a href="#"> <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24 </a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="footer-contact">
-                <ol class="liste-footer-contact">
-                    <li> <a href="contact.html">lanathaud@gmail.com</a> </li>
-                    <li> <a href=""> Mon GitHub</a> </li>
-                    <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/">Linkedin</a> </li>
-                </ol>
-            </div>
-            <div class="footer-informations">
-                <ol class="liste-footer-informations">
-                    <li> <a href="mentionslégales.html"> Mentions Légales </a> </li>
-                    <li> <a href="conditionsutilisation.html"> Conditions d'utilisation </a> </li>
-                </ol>
-            </div>
+
         </footer>
 
     </div>

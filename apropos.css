@@ -8,6 +8,8 @@
     min-height: 200vh; /* ou ajuste cette valeur pour la rendre défilable */
 }
 
+/* ---------------------------------------1 ème PARTIE------------------------------------------------ */
+
 .premier-content-apropos{/* premier rectangle blanc */
     width: 80%;
     margin: 0 10%;
@@ -21,14 +23,12 @@
     box-shadow: 0 10px 40px #94b0ff;
 }
 
-/*............................................................*/
-
 .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 85%;
+    width: 90%;
     height: 500px;
     margin: 0 auto 0;
     font-family: "Roboto", sans-serif;
@@ -54,8 +54,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 100%;
-    margin-left: 25%;
+    width: 75%;
 }
 
 h1{
@@ -76,18 +75,18 @@ h1{
 .telecharger-mon-cv {
     align-self: flex-end; /* Aligne à droite */
     margin-top: -100px;
-    margin-right: 25%; /* Ajuste cette valeur pour placer au centre verticalement */
-    cursor: pointer;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
     font-size: x-large;
     border: 1px solid #94b0ff;
     border-radius: 10px;
-    box-shadow: #94b0ff;
     padding: 15px;
     background-color: #94b0ff17;
-    gap: 8px;
 }
 .telecharger-mon-cv:hover{
     background-color: #94b0ff62;
+}
+.telecharger-mon-cv a{
+    text-decoration: none;
 }
 
 .couleurtelechargermoncv{
@@ -101,7 +100,7 @@ h1{
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 85%;
+    width: 90%;
     height: auto;
     margin: 0 auto 0;
     font-family: "Roboto", sans-serif;
@@ -112,8 +111,7 @@ h1{
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 100%;
-    margin-left: 25%;
+    width: 75%;
 }
 
 .h2-competencesacquises{
@@ -126,7 +124,7 @@ h1{
 }
 
 .bandeau-logos {
-    width: 75%; /* Largeur de la zone visible */
+    width: 100%; /* Largeur de la zone visible */
     overflow: hidden; /* Cache les images en dehors de la vue */
     box-sizing: border-box;
     margin: 0; 
@@ -153,7 +151,7 @@ h1{
     }
 }
 
-/* --------------------------------------------------------------------------------------- */
+/* ---------------------------------------2 ème PARTIE------------------------------------------------ */
 
 .deuxieme-content-apropos{
     width: 80%;
@@ -168,21 +166,85 @@ h1{
     box-shadow: 0 10px 40px #94b0ff;
 }
 
-/* --------------------------------------------------------------------------------------- */
+/* -------------------------------------FOOTER-------------------------------------------------- */
 
 footer{
-    width: 100%;
-    margin: 950px 0;
-    height: 200px; /* réglage hauteur */
-    background-color: #94b0ff;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    border-radius: 8px;
+    width: 100%; /* réglage de la largeur du footer */
+    margin: 950px 0; /* réglage de la position du footer */
+    height: 10.5%; /* réglage hauteur footer */
+    background-color: #ffffff;
     position: absolute;
-    box-shadow: 0 10px 40px #94b0ff;
+    border: 1px solid #303030;
 }
 
-.footer-navigation{
-    
+.footer-contenu{
+    display: flex;
+    justify-content:center;
+}
+
+.footer-informations{
+    margin-right: 15%;
+}
+
+.footer-nav-logosite{
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.liste-footer-logo{
+    list-style-type: none;
+}
+.liste-footer-logo a{
+    color: #303030;
+    text-decoration: none;  
+    font-size: 1rem;
+}
+.liste-footer-logo a:hover {
+    color: #A0C4FF;
+}
+.liste-footer-logo li {
+    margin-bottom: 0.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.liste-footer{
+    list-style-type: none;
+}
+.liste-footer li {
+    margin-bottom: 0.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1rem;
+}
+.liste-footer a i {
+    color: #303030;
+}
+.liste-footer a:hover i {
+    color: #A0C4FF;
+}
+.liste-footer a {
+    color: #303030;
+    text-decoration: none;  
+    font-size: 1rem;
+}
+.liste-footer a:hover {
+    color: #A0C4FF;
+}
+
+.footer-div{
+    margin-top: 2rem;
+}
+
+.p-footer{
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
