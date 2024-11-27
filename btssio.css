@@ -1,3 +1,22 @@
+/* Style pour les grands écrans (ordinateurs) */
+body {
+    font-size: 18px;
+}
+
+/* Style pour les tablettes */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Style pour les téléphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 #containvide{
     height: 100px;
 }
@@ -5,7 +24,7 @@
 .page-content { /* class qui fixe le fond derrière */
     position: relative;
     z-index: 1;
-    min-height: 100vh; /* ou ajuste cette valeur pour la rendre défilable */
+    min-height: 98vh; /* ou ajuste cette valeur pour la rendre défilable */
 }
 
 /* ---------------------------------------1 ème PARTIE------------------------------------------------ */
@@ -122,7 +141,7 @@
 
 footer{
     width: 100%; /* réglage de la largeur du footer */
-    margin: 750px 0; /* réglage de la position du footer */
+    margin: 745px 0; /* réglage de la position du footer */
     height: 21%; /* réglage hauteur footer */
     background-color: white;
     position: absolute;

@@ -1,3 +1,28 @@
+/* Style pour les grands écrans (ordinateurs) */
+body {
+    font-size: 18px;
+}
+
+/* Style pour les tablettes */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* Style pour les téléphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
 #containvide{
     height: 100px;
 }
@@ -74,18 +99,60 @@ h1{
 
 .telecharger-mon-cv {
     align-self: flex-end; /* Aligne à droite */
-    margin-top: -100px;
+    margin-top: -150px;
     margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
     font-size: x-large;
     border: 1px solid #94b0ff;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     background-color: #94b0ff17;
 }
 .telecharger-mon-cv:hover{
     background-color: #94b0ff62;
 }
 .telecharger-mon-cv a{
+    text-decoration: none;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+.certifications {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: 30px;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
+    font-size: x-large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #94b0ff17;
+}
+.certifications:hover{
+    background-color: #94b0ff62;
+}
+.certifications a{
+    text-decoration: none;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+.tableau_de_synthèse {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: 30px;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
+    font-size: x-large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #94b0ff17;
+}
+.tableau_de_synthèse:hover{
+    background-color: #94b0ff62;
+}
+.tableau_de_synthèse a{
     text-decoration: none;
 }
 
@@ -246,5 +313,4 @@ footer{
     margin-bottom: 0.7rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }

@@ -5,13 +5,32 @@
     font-family: Arial, sans-serif;
 }
 
+/* Style pour les grands écrans (ordinateurs) */
+body {
+    font-size: 18px;
+}
+
+/* Style pour les tablettes */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Style pour les téléphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 /* Couleurs de fond et container */
 main {
     background: linear-gradient(135deg, #A0C4FF, #8E94F2, #9C89B8);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 78vh;
     overflow: hidden;
 }
 
@@ -81,7 +100,7 @@ button:hover {
 
 footer{
     width: 100%; /* réglage de la largeur du footer */
-    height: 200px; /* réglage hauteur footer */
+    height: 199px; /* réglage hauteur footer */
     background: white;
     position: absolute;
     border: 1px solid #303030;
@@ -90,6 +109,7 @@ footer{
 .footer-contenu{
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 
 .footer-informations{

@@ -1,3 +1,22 @@
+/* Style pour les grands écrans (ordinateurs) */
+body {
+    font-size: 18px;
+}
+
+/* Style pour les tablettes */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Style pour les téléphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 #containvide{
     height: 100px;
 }
@@ -5,15 +24,15 @@
 .page-content { /* class qui fixe le fond derrière */
     position: relative;
     z-index: 1;
-    min-height: 100vh; /* ou ajuste cette valeur pour la rendre défilable */
+    /* min-height: ; ou ajuste cette valeur pour la rendre défilable */
 }
 
 /* ---------------------------------------1 ème PARTIE------------------------------------------------ */
 
-.premier-content-apropos{/* premier rectangle blanc */
+.premier-content-apropos{ /* premier rectangle blanc */
     width: 80%;
     margin: 0 10%;
-    height: 600px; /* réglage hauteur */
+    height: 610px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
     justify-content:center;
@@ -23,12 +42,42 @@
     box-shadow: 0 10px 40px #94b0ff;
 }
 
+.main_webitech{
+    position: relative;
+    display: flex;
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.img_webitech{
+    border-radius: 100%;
+    box-shadow: 0px 4px 10px #94b0ff;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+.p_webitech{
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+}
+
 /* -------------------------------------FOOTER-------------------------------------------------- */
 
 footer{
     width: 100%; /* réglage de la largeur du footer */
-    margin: 750px 0; /* réglage de la position du footer */
-    height: 21%; /* réglage hauteur footer */
+    margin: 160px 0; /* réglage de la position du footer */
+    height: 37%; /* réglage hauteur footer */
     background-color: white;
     position: absolute;
     border: 1px solid #303030;
