@@ -172,8 +172,10 @@ body{
     background-color: white;
 }
 
-body.dark-mode{
-    background-color: black;
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: black;
+    }
 }
 
 .logo_sombre{

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+
+
 :root {
     --color-bg1: rgb(255, 255, 255);
     --color-bg2: rgb(255, 255, 255);
@@ -13,6 +15,21 @@
     --blending: hard-light;
 }
 
+@media (prefers-color-scheme: dark){
+    :root {
+        --color-bg1: rgb(0, 0, 0);
+        --color-bg2: rgb(0, 0, 0);
+        --color1: 18, 113, 255;
+        --color2: 107, 74, 255;
+        --color3: 100, 100, 255;
+        --color4: 50, 160, 220;
+        --color5: 80, 47, 122;
+        --color-interactive: 140, 100, 255;
+        --circle-size: 80%;
+        --blending: hard-light;
+    }
+    
+}
 
 * {
     margin:0;

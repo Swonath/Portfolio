@@ -26,12 +26,21 @@ body {
 
 /* Couleurs de fond et container */
 main {
-    background: linear-gradient(135deg, #A0C4FF, #8E94F2, #9C89B8);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 78vh;
     overflow: hidden;
+}
+
+body{
+    background: linear-gradient(135deg, #A0C4FF, #8E94F2, #9C89B8);
+}
+
+@media (prefers-color-scheme: dark){
+    body {
+        background: linear-gradient(135deg, #2C3E50, #34495E, #4A4A67);
+    }
 }
 
 .contact-container {
@@ -80,7 +89,7 @@ input:focus, textarea:focus {
 }
 
 /* Bouton */
-button {
+.button_sudmit {
     width: 100%;
     padding: 12px;
     background: linear-gradient(90deg, #A0C4FF, #4B4A8E);
@@ -92,7 +101,7 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+.button_sudmit:hover {
     background: linear-gradient(90deg, #4B4A8E, #A0C4FF);
 }
 

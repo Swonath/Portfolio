@@ -11,6 +11,24 @@
 </head>
 <body>
     <main>
+                <script>
+                const toggleButton = document.getElementById("themeToggle");
+
+                toggleButton.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+                // Optionnel : sauvegarder le choix dans le localStorage
+                const isDarkMode = document.body.classList.contains("dark-mode");
+                localStorage.setItem("darkMode", isDarkMode);
+                });
+
+                // Charger le mode sombre si activé précédemment
+                window.addEventListener("DOMContentLoaded", () => {
+                const savedDarkMode = localStorage.getItem("darkMode") === "true";
+                if (savedDarkMode) {
+                document.body.classList.add("dark-mode");
+                }
+                });
+                </script>
         <a href="apropos.html">
             <div class="card">
                 <svg viewBox="0 0 100% 100%" xmlns='http://www.w3.org/2000/svg' class="noise">
