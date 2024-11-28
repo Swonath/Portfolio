@@ -101,9 +101,10 @@ button:hover {
 footer{
     width: 100%; /* réglage de la largeur du footer */
     height: 199px; /* réglage hauteur footer */
+    padding-top: 10px;
     background: white;
     position: absolute;
-    border: 1px solid #303030;
+    border-top: 1px solid #303030;
 }
 
 .footer-contenu{

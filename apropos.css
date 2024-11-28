@@ -241,7 +241,7 @@ footer{
     height: 10.5%; /* réglage hauteur footer */
     background-color: #ffffff;
     position: absolute;
-    border: 1px solid #303030;
+    border-top: 1px solid #303030;
 }
 
 .footer-contenu{

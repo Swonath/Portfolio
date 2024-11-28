@@ -38,6 +38,26 @@
                 <a href="projets.html" class="nav-item">PROJETS</a>
                 <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
                 <a href="contact.html" class="nav-item" >CONTACT</a>
+                <button id="themeToggle" style="text-decoration: none; background-color: white; height: 30px; margin-top: 15px; border: 0;"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></button>
+                <script>
+                const toggleButton = document.getElementById("themeToggle");
+
+                toggleButton.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+                // Optionnel : sauvegarder le choix dans le localStorage
+                const isDarkMode = document.body.classList.contains("dark-mode");
+                localStorage.setItem("darkMode", isDarkMode);
+                });
+
+                // Charger le mode sombre si activé précédemment
+                window.addEventListener("DOMContentLoaded", () => {
+                const savedDarkMode = localStorage.getItem("darkMode") === "true";
+                if (savedDarkMode) {
+                document.body.classList.add("dark-mode");
+                }
+                });
+                </script>
+
             </nav>
         </header>
 
