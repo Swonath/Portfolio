@@ -92,7 +92,7 @@ h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
     margin-bottom: 16px;
     color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
@@ -101,7 +101,7 @@ h1 {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 0.9;
     color: black;
 }
 
@@ -241,30 +241,13 @@ p {
     }
 }
 
-.telechargermoncv{
-    color: black;
-    font-size: 1rem;
-}
-
-.telechargermoncv:hover{
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-}
-
-.telechargercv{
-    color: blueviolet;
-}
-
 .content{
     color: black;
 }   
 
 .soush1accueil{
     color: black;
-}
-
-.card:hover{
-    font-size:large;
+    font-size: 1.2rem;
 }
 
 @media (prefers-color-scheme: dark){
@@ -281,7 +264,7 @@ p {
         --blending: hard-light;
     }
     p {
-        line-height: 1.6;
+        line-height: 0.9;
         color: rgb(255, 255, 255);
     }
     .soush1accueil{

@@ -37,12 +37,6 @@ body{
     background: linear-gradient(135deg, #A0C4FF, #8E94F2, #9C89B8);
 }
 
-@media (prefers-color-scheme: dark){
-    body {
-        background: linear-gradient(135deg, #2C3E50, #34495E, #4A4A67);
-    }
-}
-
 .contact-container {
     background: rgba(255, 255, 255, 0.8);
     padding: 30px;
@@ -74,7 +68,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #D1D1E9;
@@ -187,4 +181,14 @@ footer{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (prefers-color-scheme: dark){
+    body {
+        background: linear-gradient(135deg, #2C3E50, #34495E, #4A4A67);
+    }
+    .contact-container{
+        box-shadow: 0 10px 40px #94b0ff;
+        background-color: white;
+    }
 }
