@@ -31,7 +31,7 @@ body {
 
 .premier-content-apropos{/* premier rectangle blanc */
     width: 35%;
-    margin: 0 10%;
+    margin: 20px 10%;
     height: 600px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
@@ -48,6 +48,9 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 30px;
+    color: #94b0ff;
+    text-align: center;
 }
 
 
@@ -58,28 +61,45 @@ body {
     box-shadow: 0 10px 40px #94b0ff;
 }
 
+.telecharger-mon-cv {
+    margin-top: 30px;
+    font-size: large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #94b0ff17;
+}
+.telecharger-mon-cv:hover{
+    background-color: #94b0ff62;
+}
+.telecharger-mon-cv a{
+    text-decoration: none;
+}
+
 .deuxième-content-apropos{
     width: 35%;
-    margin: 0 55%;
+    margin: 20px 55%;
     height: 600px; /* réglage hauteur */
     background-color: #ffffff;
     display: flex;
-    justify-content:end;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 8px;
     position: absolute;
     box-shadow: 0 10px 40px #94b0ff;
 }
 
+
 /* -------------------------------------FOOTER-------------------------------------------------- */
 
 footer{
     width: 100%; /* réglage de la largeur du footer */
-    margin: 750px 0; /* réglage de la position du footer */
-    height: 21%; /* réglage hauteur footer */
+    margin: 650px 0; /* réglage de la position du footer */
+    height: 22%; /* réglage hauteur footer */
     background-color: white;
     position: absolute;
-    border-top: 1px solid #303030;
+    box-shadow: 0 10px 40px #94b0ff;
 }
 
 .footer-contenu{

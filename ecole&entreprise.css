@@ -76,11 +76,11 @@ h1 {
 
 footer{
     width: 100%; /* réglage de la largeur du footer */
-    margin: 160px 0; /* réglage de la position du footer */
-    height: 37%; /* réglage hauteur footer */
+    margin: 164px 0; /* réglage de la position du footer */
+    height: 38%; /* réglage hauteur footer */
     background-color: white;
     position: absolute;
-    border-top: 1px solid #303030;
+    box-shadow: 0 10px 40px #94b0ff;
 }
 
 .footer-contenu{

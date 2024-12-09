@@ -146,7 +146,7 @@ footer{
     height: 21%; /* réglage hauteur footer */
     background-color: white;
     position: absolute;
-    border-top: 1px solid #303030;
+    box-shadow: 0 10px 40px #94b0ff;
 }
 
 .footer-contenu{
