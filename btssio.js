@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btnSISR.addEventListener("click", function() {
         toggleContent(contentSISR, btnSISR);
-    });
+    }); 
 
     btnSLAM.addEventListener("click", function() {
         toggleContent(contentSLAM, btnSLAM);
