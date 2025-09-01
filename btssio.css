@@ -1,8 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Style pour les grands écrans (ordinateurs) */
 body {
     font-size: 18px;
 }
 
+<<<<<<< HEAD
 /* Style pour les tablettes */
 @media (max-width: 768px) {
     body {
@@ -17,6 +24,8 @@ body {
     }
 }
 
+=======
+>>>>>>> 7ff38cb686caa929385f05c41e1cb1f2761619b6
 #containvide{
     height: 100px;
 }
