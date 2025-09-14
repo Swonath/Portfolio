@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+#containvide{
+    height: 130px;
+}
+/* ---------------------------------------1 ème PARTIE------------------------------------------------ */
+
+.premier-content-apropos{/* premier rectangle blanc */
+    width: 80%;
+    margin: 0 10%;
+    height: 650px; /* réglage hauteur */
+    background-color: #ffffff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 0 10px 40px #94b0ff;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 430px;
+    margin: 0 auto 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.photoprofil{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: 40px auto;
+}
+
+.ligne-apres-photo {
+    border: none;
+    border-top: 2px solid #6c6c6c; /* Couleur de la ligne */
+    width: 20%; /* Ajuste la largeur de la ligne */
+    margin: 0 auto 20px; /* Centrage de la ligne avec une marge */
+    position: relative;
+}
+
+.presentation-contenus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 75%;
+}
+
+h1{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.p-presentation{
+    color: gray;
+    font-size: medium;
+}
+
+.telecharger-mon-cv {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: -145px;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
+    font-size: large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #94b0ff17;
+}
+.telecharger-mon-cv:hover{
+    background-color: #94b0ff62;
+}
+.telecharger-mon-cv a{
+    text-decoration: none;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+.certifications {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: 30px;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
+    font-size: large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #94b0ff17;
+}
+.certifications:hover{
+    background-color: #94b0ff62;
+}
+.certifications a{
+    text-decoration: none;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+.tableau_de_synthèse {
+    align-self: flex-end; /* Aligne à droite */
+    margin-top: 30px;
+    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
+    font-size: large;
+    border: 1px solid #94b0ff;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #94b0ff17;
+}
+.tableau_de_synthèse:hover{
+    background-color: #94b0ff62;
+}
+.tableau_de_synthèse a{
+    text-decoration: none;
+}
+
+.couleurtelechargermoncv{
+    color: #303030; /* Ajuste selon le style que tu veux */
+}
+
+/*............................................................*/
+
+.competencesacquises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.competencesacquises-contenus{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 75%;
+}
+
+.h2-competencesacquises{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 50px;
+    font-size: 1.9rem;
+}
+
+.bandeau-logos {
+    width: 100%; /* Largeur de la zone visible */
+    overflow: hidden; /* Cache les images en dehors de la vue */
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+.logos {
+    display: flex; /* Les images seront affichées en ligne */
+    gap: 100px; /* Espace entre les logos */
+    animation: defilement 20s linear infinite;  /* Animation pour défiler */
+
+}
+
+.logos img {
+    width: 80px; /* Ajuste la taille de chaque logo */
+    height: auto; /* Garde les proportions */
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0); /* Position de départ */
+    }
+    100% {
+        transform: translateX(-147%); /* Défile jusqu'à la moitié pour donner l'impression de continuité */
+    }
+}
+
+/*------------ footer ----------- */ 
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-contenu{
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; 
+}
+
+.liste-footer-contact{
+    display: flex;
+    list-style: none; /* enlève les puces */
+    padding: 0;
+    margin: 0;
+    gap: 100px; /* espace entre les éléments */
+}
+.liste-footer-contact li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.liste-footer-contact a i {
+    color: #303030;
+}
+.liste-footer-contact a:hover i {
+    color: #A0C4FF;
+}
+.liste-footer-contact a {
+    color: #303030;
+    text-decoration: none;  
+    font-size: 1rem;
+}
+.liste-footer-contact a:hover {
+    color: #A0C4FF;
+}
+
+.footer-div{
+    margin: 20px 0  ;
+}

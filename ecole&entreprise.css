@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#containvide{
+    height: 130px;
+}
+
+.image-card {
+    width: auto;
+    min-height: 75%;
+    margin: 20px auto;
+}
+
+.container-card{
+    min-height: 350px;
+    border-radius: 10px;
+}
+
+.container-img-card{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    border-top: #30303044 1px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+.card-text{
+    font-style:italic ;
+    min-height: 150px ;
+}
+
+.container-button-card{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-card{
+    padding: 10px;
+    border-radius: 25px;
+    all: unset;
+}
+
+.button-card:hover{
+    color:#A0C4FF ;
+}
+
+/*------------ footer ----------- */ 
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-contenu{
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; 
+}
+
+.liste-footer-contact{
+    display: flex;
+    list-style: none; /* enlève les puces */
+    padding: 0;
+    margin: 0;
+    gap: 100px; /* espace entre les éléments */
+}
+.liste-footer-contact li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.liste-footer-contact a i {
+    color: #303030;
+}
+.liste-footer-contact a:hover i {
+    color: #A0C4FF;
+}
+.liste-footer-contact a {
+    color: #303030;
+    text-decoration: none;  
+    font-size: 1rem;
+}
+.liste-footer-contact a:hover {
+    color: #A0C4FF;
+}
+
+.footer-div{
+    margin: 20px 0  ;
+}

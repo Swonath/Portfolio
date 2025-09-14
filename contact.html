@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- LIEN POUR LA POLICE ROBOTO -->
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/png" href="image/logosite-512x512.png" sizes="515x512"><!-- LIEN POUR LE LOGO FAVICON -->
+</head> 
+<body>
+
+    <header> <!-- POUR LA NAVIGATION DE LA PAGE  -->
+        <nav class="nav">
+            <a href="index.html"><img class="nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a>
+            <a href="apropos.html" class="nav-item">A PROPOS</a>
+            <a href="btssio.html" class="nav-item">BTS SIO</a>
+            <a href="ecole&entreprise.html" class="nav-item">ECOLE & ENTREPRISE</a>
+            <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
+            <a href="projets.html" class="nav-item">PROJETS</a>
+            <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
+            <a href="contact.html" class="nav-item active">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>Contactez-nous</h1>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button class="button_sudmit" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+            <div class="footer-contenu">
+                <div class="footer-div">
+                    <ul class="liste-footer-contact">
+                        <li> <a href="/erreur404.html"> <i class="fa-solid fa-at" style=" margin-right: 8px;"></i> lanathaud@gmail.com </a> </li>
+                        <li> <a href="https://github.com/Swonath" target="_blank"> <i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub </a> </li>
+                        <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"> <i class="fa-brands fa-linkedin" style=" margin-right: 8px;"></i> Linkedin </a> </li>
+                        <li> <a href="#"> <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script> <!-- LIEN POUR LES ICONES FONT AWESOME -->
+</body>
+</html>
