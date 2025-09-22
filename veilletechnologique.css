@@ -8,6 +8,11 @@
     height: 130px;
 }
 
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 .image-card {
     width: auto;
     min-height: 75%;
@@ -55,5 +60,10 @@
 
 .button-card:hover{
     color:#A0C4FF ;
+}
+
+.container-video{
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
