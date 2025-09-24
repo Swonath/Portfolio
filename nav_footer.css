@@ -84,12 +84,12 @@ header {
 }
 
 /*------------ footer ----------- */ 
-footer{
-    position: fixed;
+footer {
+    position: relative; /* plus sticky */
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 50px; /* petit espace avec le contenu au-dessus */
 }
 
 .footer-contenu{
