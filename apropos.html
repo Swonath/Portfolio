@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav_footer.css">
     <link rel="stylesheet" href="apropos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>A propos</title>
+    <link rel="icon" type="image/png" href="image/logosite-512x512.png" sizes="515x512">
 </head>
 <body>
 
@@ -18,74 +20,152 @@
             <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
             <a href="projets.html" class="nav-item">PROJETS</a>
             <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
-            <a href="contact.html" class="nav-item" >CONTACT</a>
+            <a href="contact.html" class="nav-item">CONTACT</a>
         </nav>
     </header>
 
     <main>
-        <div id="containvide"></div>
-        <div class="premier-content-apropos"></div>
-
-        <div class="presentation">
-                <img class="photoprofil" src="image/PHOTO-DE-PROFIL-PORTO.JPG" alt="Nathan">
-                <hr class="ligne-apres-photo">
-            <div class="presentation-contenus">
-                <h1>Présentation <i class="fa-solid fa-circle-question fa-shake" style="color: #303030; margin-left: 8px;"></i></h1>
-                <p class="p-presentation">
-                    Je m'appelle Nathan Audet, j'ai 21 ans et je suis étudiant en BTS SIO option SLAM chez CFA INSTA à Paris. Passionné <br>
-                    par l'informatique, j'ai choisi ce domaine car je suis convaincu que le développement web est au cœur des <br>
-                    métiers d'avenir. Comprendre la technologie, c'est anticiper l'évolution de notre société. J'ai découvert cet intérêt <br> 
-                    durant mon BTS NDRC, où la digitalisation m'a révélé le potentiel du numérique et du web.
-                </p>
-                <p class="telecharger-mon-cv"> <a class="couleurtelechargermoncv" href="image/CV_2025-09-12_Nathan_audet.pdf" target="blank"> Télécharger mon CV <i class="fa-solid fa-download fa-fade" style="color: #303030;"></i></a></p>
-                <p class="certifications"> <a class="couleurtelechargermoncv" href="erreur404.html"> Certifications <i class="fa-solid fa-download fa-fade" style="color: #303030;"></i></a></p>
-                <p class="tableau_de_synthèse"> <a class="couleurtelechargermoncv" href="erreur404.html"> Tableau de Synthèse <i class="fa-solid fa-download fa-fade" style="color: #303030;"></i></a></p>
-            </div>
-        </div>
-
-        <div class="competencesacquises">
-            <div class="competencesacquises-contenus">
-                <h2 class="h2-competencesacquises">Compétences acquises en BTS</h2>
-                <div class="bandeau-logos">
-                    <div class="logos">
-                        <a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank"><img src="image/logo-html.png" alt="Logo HTML5" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="image/logo-css.png" alt="Logo CSS3" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="image/logo-js.png" alt="Logo 3" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="image/logo-php.png" alt="Logo 4" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank"><img src="image/logo-c-sharp.png" alt="Logo 5" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Java_(technique)" target="_blank"><img src="image/logo-java.png" alt="Logo 6" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank"><img src="image/logo-python.png" alt="Logo 7" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank"><img src="image/logo-xml.png" alt="Logo 8" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank"><img src="image/logo-sql.png" alt="Logo 9" /></a>
-                            <!-- POUR IMPRESSION DE BOUCLE ON DOUBLE LES IMAGES -->
-                        <a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank"><img src="image/logo-html.png" alt="Logo HTML5" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="image/logo-css.png" alt="Logo CSS3" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="image/logo-js.png" alt="Logo 3" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="image/logo-php.png" alt="Logo 4" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank"><img src="image/logo-c-sharp.png" alt="Logo 5" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Java_(technique)" target="_blank"><img src="image/logo-java.png" alt="Logo 6" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank"><img src="image/logo-python.png" alt="Logo 7" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank"><img src="image/logo-xml.png" alt="Logo 8" /></a>
-                        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank"><img src="image/logo-sql.png" alt="Logo 9" /></a>
+        <div class="spacer"></div>
+        
+        <!-- Section Présentation -->
+        <section class="presentation-section">
+            <div class="container">
+                <div class="presentation-card">
+                    <div class="profile-section">
+                        <img class="profile-photo" src="image/PHOTO-DE-PROFIL-PORTO.JPG" alt="Nathan Audet">
+                        <hr class="divider">
+                    </div>
+                    
+                    <div class="content-section">
+                        <div class="text-content">
+                            <h1>Présentation <i class="fa-solid fa-circle-question fa-shake" style="color: #303030; margin-left: 8px;"></i></h1>
+                            <p class="presentation-text">
+                                Je m'appelle Nathan Audet, j'ai 21 ans et je suis étudiant en BTS SIO option SLAM chez CFA INSTA à Paris. Passionné 
+                                par l'informatique, j'ai choisi ce domaine car je suis convaincu que le développement web est au cœur des 
+                                métiers d'avenir. Comprendre la technologie, c'est anticiper l'évolution de notre société. J'ai découvert cet intérêt 
+                                durant mon BTS NDRC, où la digitalisation m'a révélé le potentiel du numérique et du web.
+                            </p>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <a href="image/CV_2025-09-12_Nathan_audet.pdf" target="_blank" class="action-btn primary">
+                                <i class="fa-solid fa-download"></i>
+                                Télécharger mon CV
+                            </a>
+                            <a href="erreur404.html" class="action-btn secondary">
+                                <i class="fa-solid fa-certificate"></i>
+                                Certifications
+                            </a>
+                            <a href="erreur404.html" class="action-btn secondary">
+                                <i class="fa-solid fa-table"></i>
+                                Tableau de Synthèse
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Compétences acquises en BTS</h2>
+                <div class="skills-carousel">
+                    <div class="skills-track">
+                        <a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank" class="skill-item">
+                            <img src="image/logo-html.png" alt="HTML5" />
+                            <span>HTML5</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank" class="skill-item">
+                            <img src="image/logo-css.png" alt="CSS3" />
+                            <span>CSS3</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="skill-item">
+                            <img src="image/logo-js.png" alt="JavaScript" />
+                            <span>JavaScript</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank" class="skill-item">
+                            <img src="image/logo-php.png" alt="PHP" />
+                            <span>PHP</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank" class="skill-item">
+                            <img src="image/logo-c-sharp.png" alt="C#" />
+                            <span>C#</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Java_(technique)" target="_blank" class="skill-item">
+                            <img src="image/logo-java.png" alt="Java" />
+                            <span>Java</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank" class="skill-item">
+                            <img src="image/logo-python.png" alt="Python" />
+                            <span>Python</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank" class="skill-item">
+                            <img src="image/logo-xml.png" alt="XML" />
+                            <span>XML</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank" class="skill-item">
+                            <img src="image/logo-sql.png" alt="SQL" />
+                            <span>SQL</span>
+                        </a>
+                        
+                        <!-- Duplication pour effet de boucle infinie -->
+                        <a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank" class="skill-item">
+                            <img src="image/logo-html.png" alt="HTML5" />
+                            <span>HTML5</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank" class="skill-item">
+                            <img src="image/logo-css.png" alt="CSS3" />
+                            <span>CSS3</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="skill-item">
+                            <img src="image/logo-js.png" alt="JavaScript" />
+                            <span>JavaScript</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank" class="skill-item">
+                            <img src="image/logo-php.png" alt="PHP" />
+                            <span>PHP</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank" class="skill-item">
+                            <img src="image/logo-c-sharp.png" alt="C#" />
+                            <span>C#</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Java_(technique)" target="_blank" class="skill-item">
+                            <img src="image/logo-java.png" alt="Java" />
+                            <span>Java</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank" class="skill-item">
+                            <img src="image/logo-python.png" alt="Python" />
+                            <span>Python</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank" class="skill-item">
+                            <img src="image/logo-xml.png" alt="XML" />
+                            <span>XML</span>
+                        </a>
+                        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank" class="skill-item">
+                            <img src="image/logo-sql.png" alt="SQL" />
+                            <span>SQL</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-contenu">
             <div class="footer-div">
                 <ul class="liste-footer-contact">
-                    <li> <a href="erreur404.html"> <i class="fa-solid fa-at" style=" margin-right: 8px;"></i> lanathaud@gmail.com </a> </li>
-                    <li> <a href="https://github.com/Swonath" target="_blank"> <i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub </a> </li>
-                    <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"> <i class="fa-brands fa-linkedin" style=" margin-right: 8px;"></i> Linkedin </a> </li>
-                    <li> <a href="#"> <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24 </a></li>
+                    <li><a href="erreur404.html"><i class="fa-solid fa-at" style="margin-right: 8px;"></i> lanathaud@gmail.com</a></li>
+                    <li><a href="https://github.com/Swonath" target="_blank"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"><i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> Linkedin</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-<script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
+    <script src="nav_hamburger.js"></script>
 </body>
 </html>

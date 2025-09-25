@@ -1,9 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html, body {
     height: 100%;         
@@ -14,191 +13,393 @@ html, body {
 }
 
 main {
-    flex: 1; /* pousse le footer en bas quand il y a peu de contenu */
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;   /* épaisseur standard */
-    font-style: normal; /* pas en italique par défaut */
-}
-
-#containvide{
-    height: 130px;
-}
-/* ---------------------------------------1 ème PARTIE------------------------------------------------ */
-
-.premier-content-apropos{/* premier rectangle blanc */
-    width: 80%;
-    margin: 0 10%;
-    height: 650px; /* réglage hauteur */
-    background-color: #ffffff;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    border-radius: 8px;
-    position: absolute;
-    box-shadow: 0 10px 40px #94b0ff;
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 90%;
-    height: 430px;
-    margin: 0 auto 15px;
-}
-
-.photoprofil{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin: 40px auto;
-}
-
-.ligne-apres-photo {
-    border: none;
-    border-top: 2px solid #6c6c6c; /* Couleur de la ligne */
-    width: 20%; /* Ajuste la largeur de la ligne */
-    margin: 0 auto 20px; /* Centrage de la ligne avec une marge */
-    position: relative;
-}
-
-.presentation-contenus {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 75%;
-}
-
-h1{
-    color: black;
-    margin-bottom: 30px;
-    margin-top: 0;
-    font-size: 2rem;
-}
-
-.p-presentation{
-    color: gray;
-    font-size: medium;
-}
-
-.telecharger-mon-cv {
-    align-self: flex-end; /* Aligne à droite */
-    margin-top: -145px;
-    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
-    font-size: large;
-    border: 1px solid #94b0ff;
-    border-radius: 10px;
-    padding: 8px;
-    background-color: #94b0ff17;
-}
-.telecharger-mon-cv:hover{
-    background-color: #94b0ff62;
-}
-.telecharger-mon-cv a{
-    text-decoration: none;
-}
-
-.couleurtelechargermoncv{
-    color: #303030; /* Ajuste selon le style que tu veux */
-}
-
-.certifications {
-    align-self: flex-end; /* Aligne à droite */
-    margin-top: 30px;
-    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
-    font-size: large;
-    border: 1px solid #94b0ff;
-    border-radius: 10px;
-    padding: 8px;
-    background-color: #94b0ff17;
-}
-.certifications:hover{
-    background-color: #94b0ff62;
-}
-.certifications a{
-    text-decoration: none;
-}
-
-.couleurtelechargermoncv{
-    color: #303030; /* Ajuste selon le style que tu veux */
-}
-
-.tableau_de_synthèse {
-    align-self: flex-end; /* Aligne à droite */
-    margin-top: 30px;
-    margin-right: 0; /* Ajuste cette valeur pour placer au centre verticalement */
-    font-size: large;
-    border: 1px solid #94b0ff;
-    border-radius: 10px;
-    padding: 8px;
-    background-color: #94b0ff17;
-}
-.tableau_de_synthèse:hover{
-    background-color: #94b0ff62;
-}
-.tableau_de_synthèse a{
-    text-decoration: none;
-}
-
-.couleurtelechargermoncv{
-    color: #303030; /* Ajuste selon le style que tu veux */
-}
-
-/*............................................................*/
-
-.competencesacquises{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 90%;
-    height: auto;
-    margin: 0 auto 0;
-}
-
-.competencesacquises-contenus{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 75%;
-}
-
-.h2-competencesacquises{
-    color: black;
+    flex: 1;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.spacer {
+    height: 100px;
+}
+
+/* Container responsive */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Présentation */
+.presentation-section {
+    padding: 40px 0 80px 0;
+}
+
+.presentation-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(148, 176, 255, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 80px rgba(148, 176, 255, 0.2);
+}
+
+.profile-section {
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #94b0ff;
+    box-shadow: 0 10px 30px rgba(148, 176, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #94b0ff;
+    width: 60px;
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+.content-section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-content h1 {
+    color: #303030;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.presentation-text {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn.primary {
+    background: linear-gradient(135deg, #94b0ff, #7a9eff);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.action-btn.primary:hover {
+    background: linear-gradient(135deg, #7a9eff, #6b8eff);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(148, 176, 255, 0.4);
+}
+
+.action-btn.secondary {
+    background: rgba(148, 176, 255, 0.1);
+    color: #303030;
+    border: 2px solid #94b0ff;
+}
+
+.action-btn.secondary:hover {
+    background: rgba(148, 176, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(148, 176, 255, 0.3);
+}
+
+/* Section Compétences */
+.skills-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.section-title {
+    text-align: center;
+    color: #303030;
+    font-size: 2.2rem;
+    font-weight: 500;
     margin-bottom: 50px;
-    font-size: 1.9rem;
 }
 
-.bandeau-logos {
-    width: 100%; /* Largeur de la zone visible */
-    overflow: hidden; /* Cache les images en dehors de la vue */
-    box-sizing: border-box;
-    margin: 0; 
+.skills-carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
-.logos {
-    display: flex; /* Les images seront affichées en ligne */
-    gap: 100px; /* Espace entre les logos */
-    animation: defilement 20s linear infinite;  /* Animation pour défiler */
-
+.skills-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll-skills 25s linear infinite;
+    width: fit-content;
 }
 
-.logos img {
-    width: 80px; /* Ajuste la taille de chaque logo */
-    height: auto; /* Garde les proportions */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #303030;
+    min-width: 120px;
 }
 
-@keyframes defilement {
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(148, 176, 255, 0.3);
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);
+}
+
+.skill-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+@keyframes scroll-skills {
     0% {
-        transform: translateX(0); /* Position de départ */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-147%); /* Défile jusqu'à la moitié pour donner l'impression de continuité */
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+
+/* Tablettes */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .spacer {
+        height: 80px;
+    }
+    
+    .content-section {
+        padding: 30px;
+    }
+    
+    .text-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .presentation-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .action-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .action-btn {
+        min-width: 180px;
+        font-size: 0.95rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .skills-track {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .spacer {
+        height: 70px;
+    }
+    
+    .presentation-section {
+        padding: 20px 0 40px 0;
+    }
+    
+    .profile-section {
+        padding: 30px 20px 15px 20px;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .content-section {
+        padding: 25px 20px;
+        gap: 25px;
+    }
+    
+    .text-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .presentation-text {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .action-btn {
+        min-width: auto;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 15px 20px;
+    }
+    
+    .skills-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+    
+    .skills-track {
+        gap: 20px;
+    }
+    
+    .skill-item {
+        min-width: 100px;
+        padding: 15px;
+    }
+    
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-item span {
+        font-size: 0.8rem;
+    }
+    
+    @keyframes scroll-skills {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-60%);
+        }
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .presentation-card {
+        border-radius: 15px;
+        margin: 0 5px;
+    }
+    
+    .profile-section {
+        padding: 25px 15px 15px 15px;
+    }
+    
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .content-section {
+        padding: 20px 15px;
+    }
+    
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .presentation-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .action-btn {
+        font-size: 0.85rem;
+        padding: 12px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .skill-item {
+        min-width: 80px;
+        padding: 12px;
+    }
+    
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skill-item span {
+        font-size: 0.75rem;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="btssio.css">
     <link rel="stylesheet" href="nav_footer.css">
     <title>BTS SIO</title>
@@ -20,49 +20,174 @@
             <a href="réalisations.html" class="nav-item">RÉALISATIONS</a>
             <a href="projets.html" class="nav-item">PROJETS</a>
             <a href="veilletechnologique.html" class="nav-item">VEILLE TECHNOLOGIQUE</a>
-            <a href="contact.html" class="nav-item" >CONTACT</a>
+            <a href="contact.html" class="nav-item">CONTACT</a>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <div class="presentation">
-                <h1>Qu'est-ce que le BTS SIO ?</h1>
-                <p>Le BTS SIO (Services Informatiques aux Organisations) est un diplôme d'État de niveau BAC+2. Il s'adresse aux personnes qui souhaitent, en deux ans, se former aux métiers de développeur ou d'administrateur réseau, avec pour objectif d'intégrer rapidement le marché du travail ou de poursuivre des études dans le secteur de l'informatique. Ce BTS propose deux spécialisations : l'option SLAM et l'option SISR, chacune ayant ses propres spécificités.</p>
-            </div>
-            <div class="options">
-                <button id="btnSISR" class="option-button">Option SISR</button>
-                <button id="btnSLAM" class="option-button">Option SLAM</button>
-            </div>
-            <div class="content">
-                <div id="contentSISR" class="content-section-sisr hidden">
-                    <h2>Option SISR</h2>
-                    <p class="option-p1" ><strong>SISR : SOLUTIONS D'INFRASTRUCTURES SYSTÈMES ET RÉSEAU</strong></p>
-                    <p class="option-p2" >L'option Solution d'infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d'un BTS SIO SISR, vous serez capable de gérer et d'administrer le réseau d'une société et d'assurer sa sécurité et sa maintenance.</p>
+        <div class="spacer"></div>
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="highlight">BTS SIO</span>
+                        Services Informatiques aux Organisations
+                    </h1>
+                    <p class="hero-description">
+                        Le BTS SIO est un diplôme d'État de niveau BAC+2 qui forme aux métiers de l'informatique. 
+                        Il propose deux spécialisations complémentaires pour répondre aux besoins du secteur numérique.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Années</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Options</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">BAC+2</span>
+                            <span class="stat-label">Niveau</span>
+                        </div>
+                    </div>
                 </div>
-                <div id="contentSLAM" class="content-section-slam hidden">
-                    <h2>Option SLAM</h2>
-                    <p class="option-p1" ><strong>SLAM : SOLUTIONS LOGICIELLES ET APPLICATIONS MÉTIERS</strong></p>
-                    <p class="option-p2" >L'option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d'un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).</p>
+            </div>
+        </section>
+
+        <!-- Options Section -->
+        <section class="options-section">
+            <div class="container">
+                <h2 class="section-title">Choisissez votre spécialisation</h2>
+                <p class="section-subtitle">Deux options pour deux univers de l'informatique</p>
+                
+                <div class="options-container">
+                    <!-- Option SISR -->
+                    <div class="option-card" data-option="sisr">
+                        <div class="option-header">
+                            <div class="option-icon sisr-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h3 class="option-title">Option SISR</h3>
+                            <p class="option-acronym">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                        </div>
+                        <div class="option-content">
+                            <div class="option-description">
+                                <p>L'option SISR forme des professionnels capables de gérer et administrer les infrastructures réseau d'une entreprise.</p>
+                            </div>
+                            <div class="option-skills">
+                                <h4>Compétences développées</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Administration des systèmes</li>
+                                    <li><i class="fa-solid fa-check"></i> Gestion des réseaux informatiques</li>
+                                    <li><i class="fa-solid fa-check"></i> Sécurité informatique</li>
+                                    <li><i class="fa-solid fa-check"></i> Maintenance et support technique</li>
+                                    <li><i class="fa-solid fa-check"></i> Virtualisation et cloud</li>
+                                </ul>
+                            </div>
+                            <div class="option-careers">
+                                <h4>Métiers accessibles</h4>
+                                <div class="career-tags">
+                                    <span class="career-tag">Administrateur réseau</span>
+                                    <span class="career-tag">Technicien support</span>
+                                    <span class="career-tag">Administrateur systèmes</span>
+                                    <span class="career-tag">Responsable sécurité</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Option SLAM -->
+                    <div class="option-card active" data-option="slam">
+                        <div class="option-header">
+                            <div class="option-icon slam-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="option-title">Option SLAM</h3>
+                            <p class="option-acronym">Solutions Logicielles et Applications Métiers</p>
+                        </div>
+                        <div class="option-content">
+                            <div class="option-description">
+                                <p>L'option SLAM forme des développeurs capables de concevoir et réaliser des applications informatiques.</p>
+                            </div>
+                            <div class="option-skills">
+                                <h4>Compétences développées</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Développement d'applications</li>
+                                    <li><i class="fa-solid fa-check"></i> Programmation web et mobile</li>
+                                    <li><i class="fa-solid fa-check"></i> Bases de données</li>
+                                    <li><i class="fa-solid fa-check"></i> Analyse et conception</li>
+                                    <li><i class="fa-solid fa-check"></i> Tests et déploiement</li>
+                                </ul>
+                            </div>
+                            <div class="option-careers">
+                                <h4>Métiers accessibles</h4>
+                                <div class="career-tags">
+                                    <span class="career-tag">Développeur web</span>
+                                    <span class="career-tag">Développeur mobile</span>
+                                    <span class="career-tag">Analyste programmeur</span>
+                                    <span class="career-tag">Chef de projet junior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-note">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Mon choix s'est porté sur l'option <strong>SLAM</strong> car je suis passionné par le développement et la création d'applications innovantes.</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Program Structure -->
+        <section class="program-section">
+            <div class="container">
+                <h2 class="section-title">Structure du programme</h2>
+                <div class="program-grid">
+                    <div class="program-item">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Travaux pratiques</h3>
+                        <p>Mise en pratique des concepts, développement de projets concrets</p>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3>Stage en entreprise</h3>
+                        <p>10 semaines de stage pour une expérience professionnelle enrichissante</p>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Projet final</h3>
+                        <p>Réalisation d'un projet complet avec soutenance devant un jury</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-contenu">
             <div class="footer-div">
                 <ul class="liste-footer-contact">
-                    <li> <a href="erreur404.html"> <i class="fa-solid fa-at" style=" margin-right: 8px;"></i> lanathaud@gmail.com </a> </li>
-                    <li> <a href="https://github.com/Swonath" target="_blank"> <i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub </a> </li>
-                    <li> <a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"> <i class="fa-brands fa-linkedin" style=" margin-right: 8px;"></i> Linkedin </a> </li>
-                    <li> <a href="#"> <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24 </a></li>
+                    <li><a href="erreur404.html"><i class="fa-solid fa-at" style="margin-right: 8px;"></i> lanathaud@gmail.com</a></li>
+                    <li><a href="https://github.com/Swonath" target="_blank"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> Mon GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/nathan-audet-400192296/" target="_blank"><i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> Linkedin</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> 07 81 79 45 24</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-<script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
-<script src="btssio.js"></script>
+    <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
+    <script src="nav_hamburger.js"></script>
+    <script src="btssio.js"></script>
 </body>
 </html>

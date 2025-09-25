@@ -27,6 +27,7 @@ header {
     font-style: normal;
     font-size: 16px;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .nav-item {
@@ -80,6 +81,80 @@ header {
     margin-top: 6px;
     margin-right: 40px;
     margin-left: 10px;
+}
+
+/* Menu hamburger - caché par défaut */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #303030;
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+/* Animation du hamburger quand ouvert */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Menu mobile overlay */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(148, 176, 255, 0.95), rgba(169, 183, 250, 0.95));
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-nav.open {
+    transform: translateX(0);
+}
+
+.mobile-nav .nav-item {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 15px 30px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.mobile-nav .nav-item.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
 
 /* Footer */
@@ -140,6 +215,7 @@ footer {
     .nav {
         max-width: 95%;
         padding: 0 15px;
+        font-size: 15px;
     }
     
     .nav-item {
@@ -150,6 +226,8 @@ footer {
     
     .nav-logosite {
         margin-right: 25px;
+        width: 45px;
+        height: 45px;
     }
     
     .liste-footer-contact {
@@ -159,8 +237,7 @@ footer {
 
 @media (max-width: 992px) {
     .nav {
-        max-width: 98%;
-        padding: 0 10px;
+        font-size: 14px;
     }
     
     .nav-item {
@@ -170,13 +247,15 @@ footer {
     }
     
     .nav-logosite {
-        width: 45px;
-        height: 45px;
+        width: 42px;
+        height: 42px;
         margin-right: 20px;
     }
     
     .liste-footer-contact {
         gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .liste-footer-contact a {
@@ -186,43 +265,74 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 60px;
-        padding: 0 10px;
+        height: 70px;
+        padding: 0 20px;
+        justify-content: space-between;
     }
     
+    /* Navigation normale cachée */
     .nav {
-        overflow-x: auto;
-        overflow-y: hidden;
-        max-width: 100%;
-        padding: 0 5px;
-        margin-top: 15px;
-        border-radius: 30px;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    
-    .nav::-webkit-scrollbar {
         display: none;
     }
     
-    .nav-item {
-        padding: 15px 6px;
-        margin: 0 1px;
-        font-size: 13px;
-        min-width: fit-content;
+    /* Affichage du logo et hamburger */
+    .nav-logosite {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Footer responsive */
+    .liste-footer-contact {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .liste-footer-contact a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 60px;
+        padding: 0 15px;
     }
     
     .nav-logosite {
         width: 40px;
         height: 40px;
-        margin-right: 15px;
-        margin-left: 5px;
+        left: 15px;
     }
     
-    .liste-footer-contact {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
+    .hamburger {
+        right: 15px;
+    }
+    
+    .hamburger span {
+        width: 22px;
+        height: 2px;
+    }
+    
+    .mobile-nav .nav-item {
+        font-size: 1.3rem;
+        margin: 15px 0;
+        padding: 12px 25px;
     }
     
     .liste-footer-contact a {
