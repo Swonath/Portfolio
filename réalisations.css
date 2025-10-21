@@ -169,3 +169,67 @@ main {
         width: 100%;
     }
 }
+
+/* Styles pour les filtres */
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid #94b0ff;
+    background-color: white;
+    color: #4B4A8E;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+.filter-btn:hover {
+    background-color: #f0f4ff;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: #94b0ff;
+    color: white;
+    box-shadow: 0 4px 15px rgba(148, 176, 255, 0.4);
+}
+
+/* Styles pour les cartes filtrées */
+.container-card {
+    transition: all 0.5s ease;
+    order: 2; /* Par défaut, les cartes non filtrées sont après */
+}
+
+.container-card.highlighted {
+    order: 1; /* Les cartes filtrées passent en premier */
+    opacity: 1;
+    filter: blur(0);
+}
+
+.container-card.dimmed {
+    order: 2;
+    opacity: 0.5;
+    filter: blur(2px);
+    pointer-events: none; /* Empêche les clics sur les cartes floutées */
+}
+
+/* Responsive pour les filtres */
+@media (max-width: 767px) {
+    .filters-container {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
