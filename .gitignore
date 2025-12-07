@@ -1,0 +1,5 @@
+# Large files
+Download/*.zip
+
+# OS files
+.DS_Store
