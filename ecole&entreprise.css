@@ -114,6 +114,7 @@ main {
     padding: 8px 16px;
     text-decoration: none;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .card-buttons .btn-outline-primary {
@@ -135,6 +136,14 @@ main {
 .card-buttons .btn-primary:hover {
     background-color: #7a9eff;
     border-color: #7a9eff;
+}
+
+.card-logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4B4A8E;
+    text-align: center;
+    padding: 0 20px;
 }
 
 /* Responsive pour les cards */
