@@ -5,7 +5,7 @@
 }
 
 html, body {
-    height: 100%;         
+    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -19,24 +19,11 @@ main {
     flex: 1;
 }
 
-/* Style pour les tablettes */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* Style pour les téléphones */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-}
-
 #containvide {
     height: 130px;
 }
 
+/* En-tête de page */
 .page-title {
     text-align: center;
     margin-bottom: 20px;
@@ -49,21 +36,42 @@ main {
     margin-bottom: 40px;
     color: #303030;
     font-style: italic;
-}
-
-.section-title {
-    text-align: left;
-    margin-bottom: 20px;
-    color: #4B4A8E;
-    font-size: 1.5rem;
-}
-
-.section-description {
-    margin-bottom: 30px;
-    color: #303030;
     line-height: 1.6;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Titres de section */
+.section-title {
+    text-align: center;
+    color: #4B4A8E;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+/* Encart "Sujet de ma veille" */
+.sujet-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-left: 4px solid #94b0ff;
+    border-radius: 0 12px 12px 0;
+    padding: 28px 32px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 30px rgba(148, 176, 255, 0.12);
+    color: #303030;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.sujet-card em {
+    color: #4B4A8E;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Cards outils */
 .image-card {
     width: 90%;
     height: 90%;
@@ -72,7 +80,7 @@ main {
 }
 
 .container-card {
-    min-height: 450px;
+    min-height: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -103,16 +111,17 @@ main {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #4B4A8E;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .card-text {
     font-style: italic;
-    color: #303030;
+    color: #555;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-size: 0.95rem;
 }
 
 .card-buttons {
@@ -124,20 +133,10 @@ main {
 
 .card-buttons .btn {
     border-radius: 25px;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-
-.card-buttons .btn-outline-primary {
-    border-color: #94b0ff;
-    color: #94b0ff;
-}
-
-.card-buttons .btn-outline-primary:hover {
-    background-color: #94b0ff;
-    border-color: #94b0ff;
-    color: white;
+    white-space: nowrap;
 }
 
 .card-buttons .btn-primary {
@@ -150,45 +149,222 @@ main {
     border-color: #7a9eff;
 }
 
-.container-video {
-    margin: 40px 0;
+/* Section RSS */
+.rss-section {
+    margin: 60px 0 50px;
+}
+
+.rss-main-title {
+    text-align: center;
+    color: #4B4A8E;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rss-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.rss-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: 4px solid #94b0ff;
+}
+
+.rss-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(148, 176, 255, 0.3);
+}
+
+.rss-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.rss-title a {
+    color: #303030;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.rss-title a:hover {
+    color: #94b0ff;
+}
+
+.rss-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rss-source {
+    background-color: #f0f2ff;
+    color: #4B4A8E;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.rss-date {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.rss-desc {
+    font-style: italic;
+    color: #555;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.rss-read-more {
+    color: #94b0ff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.rss-read-more:hover {
+    color: #4B4A8E;
+}
+
+.rss-loading,
+.rss-error {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #888;
+    padding: 40px;
+    font-style: italic;
+}
+
+.rss-error {
+    color: #e74c3c;
+}
+
+/* Section vidéos */
+.videos-section {
+    margin: 60px 0;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(148, 176, 255, 0.15);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(148, 176, 255, 0.25);
+}
+
+.video-card h3 {
+    color: #4B4A8E;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.container-video h3 {
-    color: #4B4A8E;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+.video-card iframe {
+    border-radius: 10px;
+    display: block;
 }
 
-/* Responsive pour les cards */
+.video-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.video-points li {
+    padding-left: 20px;
+    position: relative;
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.97rem;
+}
+
+.video-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #94b0ff;
+    border-radius: 50%;
+}
+
+/* Responsive */
 @media (max-width: 991px) {
-    .row-cols-lg-3 > * {
-        flex: 0 0 auto;
-        width: 50%;
+    .sujet-card {
+        padding: 22px 24px;
     }
 }
 
 @media (max-width: 767px) {
-    .row-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 100%;
+    .rss-grid {
+        grid-template-columns: 1fr;
     }
-    
+
     .container-card {
-        min-height: 400px;
+        min-height: auto;
     }
-    
+
     .page-title {
         font-size: 1.5rem;
     }
-    
+
+    .section-title,
+    .rss-main-title {
+        font-size: 1.3rem;
+    }
+
     .card-buttons {
         flex-direction: column;
         gap: 8px;
     }
-    
+
     .card-buttons .btn {
         width: 100%;
+    }
+
+    .video-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .sujet-card {
+        padding: 18px 18px;
+        font-size: 0.95rem;
     }
 }

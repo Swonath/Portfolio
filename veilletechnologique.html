@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="image/logosite-512x512.png" sizes="515x512">
     <title>Veille technologique</title>
 </head>
-<body> 
+<body>
     <header>
         <nav class="nav">
             <a href="index.html"><img class="nav-logosite" src="image/logosite-512x512.png" alt="logo site"></a>
@@ -27,18 +27,21 @@
     <main>
         <div id="containvide"></div>
         <div class="container">
-            <div style="display:flex; justify-content:center; flex-direction:column; align-items:center; text-align:center;">
+
+            <!-- En-tête -->
             <h1 class="page-title">Veille technologique</h1>
-            
-            <p class="section-description">La veille technologique est une pratique qui consiste à surveiller les évolutions d'un secteur pour maintenir ses compétences à jour et anticiper les changements.</p>           
-            
+            <p class="page-description">La veille technologique est une pratique qui consiste à surveiller les évolutions d'un secteur pour maintenir ses compétences à jour et anticiper les changements.</p>
+
+            <!-- Sujet -->
             <h2 class="section-title">Sujet de ma veille</h2>
-            <p class="section-description">Pour le sujet de ma veille, j'ai décidé de traité sur le sujet de l'informatique quantique, avec comme thématique : En quoi l'informatique quantique peut-elle transformer l'avenir du numérique et apporter des avantages que l'informatique classique ne peut pas atteindre ?</p>
-            
-            <h2 class="section-title">Mes outils</h2>
+            <div class="sujet-card">
+                Pour le sujet de ma veille, j'ai décidé de traiter l'<em>informatique quantique</em>, avec comme thématique :<br><br>
+                <em>« En quoi l'informatique quantique peut-elle transformer l'avenir du numérique et apporter des avantages que l'informatique classique ne peut pas atteindre ? »</em>
             </div>
-            
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Outils -->
+            <h2 class="section-title">Mes outils</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 20px;">
                 <div class="col">
                     <div class="card container-card h-100">
                         <div class="container-img-card">
@@ -46,10 +49,10 @@
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Quanta Magazine</h5>
-                            <p class="card-text flex-grow-1">Quanta Magazine propose des articles clairs, fiables et régulièrement mis à jour, qui rendent accessibles des avancées sur un sujet complexe qu'est l'informatique quantique</p>
+                            <p class="card-text flex-grow-1">Quanta Magazine propose des articles clairs, fiables et régulièrement mis à jour, qui rendent accessibles des avancées sur un sujet complexe qu'est l'informatique quantique.</p>
                             <div class="card-buttons">
                                 <button class="btn btn-primary btn-sm" onclick="window.open('https://www.quantamagazine.org/tag/quantum-computing/', '_blank')">
-                                    Voir plus d'article
+                                    Voir plus d'articles
                                 </button>
                             </div>
                         </div>
@@ -58,14 +61,14 @@
                 <div class="col">
                     <div class="card container-card h-100">
                         <div class="container-img-card">
-                            <img src="image/Capture d’écran 2025-09-15 à 12.10.05.png" class="card-img-top image-card" alt="INRIA">
+                            <img src="image/logo_inria.png" class="card-img-top image-card" alt="INRIA">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">INRIA</h5>
                             <p class="card-text flex-grow-1">J'utilise l'INRIA pour ma veille en informatique quantique car c'est une référence en recherche informatique, avec des publications fiables sur les dernières avancées et tendances du domaine.</p>
                             <div class="card-buttons">
                                 <button class="btn btn-primary btn-sm" onclick="window.open('https://www.inria.fr/fr/algorithmes-et-informatique-quantiques', '_blank')">
-                                    Voir plus d'article
+                                    Voir plus d'articles
                                 </button>
                             </div>
                         </div>
@@ -83,22 +86,54 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="container-video">
-                <h3>Présentation vulgarisé de l'informatique quantique</h3>
-                <iframe width="100%" height="315" 
-                    src="https://www.youtube.com/embed/wfXs7QXy4IU" 
-                    title="Vidéo YouTube"
-                    frameborder="0" 
-                    allowfullscreen style="border-radius: 15px;">
-                </iframe>
+
+            <!-- Flux RSS -->
+            <section class="rss-section">
+                <h2 class="rss-main-title">
+                    <i class="fa-solid fa-rss" style="color: #94b0ff; margin-right: 8px;"></i>Flux RSS — Informatique Quantique
+                </h2>
+                <p class="page-description">Dernières actualités issues de Science Daily et Phys.org.</p>
+                <div class="rss-grid" id="rss-feed">
+                    <div class="rss-loading">
+                        <i class="fa-solid fa-circle-notch fa-spin" style="margin-right: 8px;"></i>Chargement des articles...
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vidéos -->
+            <h2 class="section-title">Vidéos</h2>
+            <div class="videos-section">
+                <div class="video-card">
+                    <h3>Présentation vulgarisée de l'informatique quantique</h3>
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/wfXs7QXy4IU"
+                        title="Présentation vulgarisée de l'informatique quantique"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Quels sont les enjeux de l'informatique quantique aujourd'hui ?</h3>
+                    <ul class="video-points">
+                        <li>Résoudre des problèmes très compliqués bien plus vite qu'un ordinateur normal, par exemple trouver le meilleur itinéraire parmi des millions de possibilités ou simuler des molécules pour créer de nouveaux médicaments.</li>
+                        <li>Protéger nos données : les ordinateurs quantiques pourraient casser les systèmes de sécurité actuels utilisés pour les banques ou les mots de passe. Il faut donc inventer de nouvelles façons de chiffrer nos informations.</li>
+                        <li>Rendre l'intelligence artificielle encore plus puissante en lui permettant d'apprendre et d'analyser des données beaucoup plus rapidement qu'aujourd'hui.</li>
+                        <li>Éviter une dépendance technologique : les grandes puissances comme les États-Unis, la Chine ou l'Europe investissent des milliards pour être les premières à maîtriser cette technologie stratégique.</li>
+                        <li>Stabiliser les machines : les ordinateurs quantiques actuels font encore beaucoup d'erreurs car ils sont très sensibles aux perturbations extérieures (chaleur, vibrations). Les rendre fiables est le défi principal des chercheurs.</li>
+                    </ul>
+                </div>
+                <div class="video-card">
+                    <h3>Quelle sera la place de l'informatique quantique dans le futur ?</h3>
+                    <ul class="video-points">
+                        <li>Des communications totalement sécurisées : grâce à la physique quantique, il sera possible de détecter immédiatement si quelqu'un essaie d'espionner un message, rendant les écoutes impossibles.</li>
+                        <li>Accélérer la recherche médicale : simuler le comportement des molécules permettra de concevoir des médicaments sur mesure en quelques mois au lieu de plusieurs années.</li>
+                        <li>Mieux gérer des systèmes du quotidien : optimiser les réseaux électriques pour éviter les pannes, améliorer les prévisions météo ou réduire les embouteillages dans les grandes villes.</li>
+                        <li>Ne pas remplacer nos ordinateurs, mais les compléter : l'ordinateur quantique sera utilisé comme un outil spécialisé pour les calculs très difficiles, pendant que l'ordinateur classique gérera le reste.</li>
+                        <li>Accéder à la puissance quantique depuis n'importe où : des entreprises comme IBM ou Microsoft proposent déjà d'utiliser leurs ordinateurs quantiques via internet, sans avoir besoin d'en posséder un.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="container-video">
-                <h3>Quels sont les enjeux de l'informatique quantique aujourd'hui ?</h3>
-            </div>
-            <div class="container-video">
-                <h3>Quelle sera la place de l'informatique quantique dans le futur ?</h3>
-            </div>
+
         </div>
     </main>
 
@@ -117,5 +152,6 @@
     <script src="https://kit.fontawesome.com/78d2cda858.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="nav_hamburger.js"></script>
+    <script src="rss-feed.js"></script>
 </body>
 </html>
