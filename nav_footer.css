@@ -211,55 +211,95 @@ footer {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .nav {
-        max-width: 95%;
-        padding: 0 15px;
-        font-size: 15px;
+        max-width: 97%;
+        padding: 0 12px;
+        font-size: 14px;
     }
-    
+
     .nav-item {
-        padding: 18px 12px;
-        margin: 0 3px;
-        font-size: 15px;
+        padding: 18px 10px;
+        margin: 0 2px;
+        font-size: 14px;
     }
-    
+
     .nav-logosite {
-        margin-right: 25px;
-        width: 45px;
-        height: 45px;
+        margin-right: 18px;
+        width: 44px;
+        height: 44px;
     }
-    
+}
+
+@media (max-width: 1300px) {
+    .nav {
+        max-width: 98%;
+        padding: 0 10px;
+        font-size: 13px;
+    }
+
+    .nav-item {
+        padding: 18px 8px;
+        margin: 0 2px;
+        font-size: 13px;
+    }
+
+    .nav-logosite {
+        margin-right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
     .liste-footer-contact {
         gap: 80px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
     .nav {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 0 8px;
     }
-    
+
     .nav-item {
-        padding: 16px 8px;
-        margin: 0 2px;
-        font-size: 14px;
+        padding: 18px 6px;
+        margin: 0 1px;
+        font-size: 12px;
     }
-    
+
     .nav-logosite {
-        width: 42px;
-        height: 42px;
-        margin-right: 20px;
+        margin-right: 10px;
+        width: 38px;
+        height: 38px;
     }
-    
+
     .liste-footer-contact {
         gap: 60px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .liste-footer-contact a {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        font-size: 11px;
+        padding: 0 6px;
+    }
+
+    .nav-item {
+        padding: 18px 5px;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .nav-logosite {
+        margin-right: 8px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -269,12 +309,12 @@ footer {
         padding: 0 20px;
         justify-content: space-between;
     }
-    
+
     /* Navigation normale cachée */
     .nav {
         display: none;
     }
-    
+
     /* Affichage du logo et hamburger */
     .nav-logosite {
         width: 45px;
@@ -285,7 +325,7 @@ footer {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     .hamburger {
         display: flex;
         position: absolute;
@@ -293,7 +333,7 @@ footer {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     /* Footer responsive */
     .liste-footer-contact {
         flex-direction: column;
@@ -301,7 +341,7 @@ footer {
         align-items: center;
         text-align: center;
     }
-    
+
     .liste-footer-contact a {
         font-size: 0.9rem;
         padding: 8px;
@@ -313,28 +353,28 @@ footer {
         height: 60px;
         padding: 0 15px;
     }
-    
+
     .nav-logosite {
         width: 40px;
         height: 40px;
         left: 15px;
     }
-    
+
     .hamburger {
         right: 15px;
     }
-    
+
     .hamburger span {
         width: 22px;
         height: 2px;
     }
-    
+
     .mobile-nav .nav-item {
         font-size: 1.3rem;
         margin: 15px 0;
         padding: 12px 25px;
     }
-    
+
     .liste-footer-contact a {
         font-size: 0.85rem;
     }
